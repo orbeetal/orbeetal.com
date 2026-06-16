@@ -16,6 +16,7 @@ const navLinks = [
   { name: "About",         href: "about" },
   { name: "Contact",       href: "contact" },
   { name: "Idea Contest",  route: "/idea-contest", highlight: true },
+  { name: "Career Fair",   route: "/cv-submit",    highlight: true },
 ];
 
 export function Navbar() {

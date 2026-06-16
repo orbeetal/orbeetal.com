@@ -9,10 +9,20 @@ export { stats, whyChooseUs } from "./about.js";
 export { contactInfo } from "./contact.js";
 export {
   ideaContestMeta,
+  ideaContestBannerContent,
   ideaContestPageMeta,
   ideaContestStats,
   ideaContestInfoCards,
   ideaContestSubmitItems,
   ideaContestCriteria,
 } from "./ideaContest.js";
-export { activeHero } from "./siteConfig.js";
+export {
+  cvSubmitMeta,
+  cvSubmitBannerContent,
+  cvSubmitPageMeta,
+  cvSubmitStats,
+  cvSubmitInfoCards,
+  cvSubmitSteps,
+  cvSubmitBenefits,
+} from "./cvSubmit.js";
+export { activeHero, showTopBanner } from "./siteConfig.js";

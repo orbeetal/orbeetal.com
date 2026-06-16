@@ -8,6 +8,15 @@ export const ideaContestMeta = {
   venue: "RUET Career Forum 11th Career Fair",
 };
 
+// ─── Top banner content ───────────────────────────────────────────────────────
+export const ideaContestBannerContent = {
+  label: `${ideaContestMeta.organizer} Idea Contest 2026`,
+  highlight: `Prize Pool ${ideaContestMeta.prize}`,
+  detail: `Deadline ${ideaContestMeta.deadline}`,
+  href: "/idea-contest",
+  cta: "Register Now",
+};
+
 // ─── Page metadata (SEO) ──────────────────────────────────────────────────────
 export const ideaContestPageMeta = {
   title: `Idea Contest 2026 — ${ideaContestMeta.organizer}`,
