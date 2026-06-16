@@ -9,9 +9,24 @@ export const cvSubmitMeta = {
 };
 
 // ─── Page metadata (SEO) ──────────────────────────────────────────────────────
+const _title = `CV Submit — RCF ${cvSubmitMeta.edition} Career Fair`;
+const _desc  = `Submit your CV for the ${cvSubmitMeta.organizer} ${cvSubmitMeta.edition} Career Fair. Event: ${cvSubmitMeta.eventDate} at ${cvSubmitMeta.venue}.`;
+
 export const cvSubmitPageMeta = {
-  title: `CV Submit — RCF ${cvSubmitMeta.edition} Career Fair`,
-  description: `Submit your CV for the ${cvSubmitMeta.organizer} ${cvSubmitMeta.edition} Career Fair. Event: ${cvSubmitMeta.eventDate} at ${cvSubmitMeta.venue}.`,
+  title: _title,
+  description: _desc,
+  openGraph: {
+    title: _title,
+    description: _desc,
+    type: "website",
+    images: [{ url: "/api/og?type=cv-submit", width: 1200, height: 630, alt: `RCF ${cvSubmitMeta.edition} Career Fair` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: _title,
+    description: _desc,
+    images: ["/api/og?type=cv-submit"],
+  },
 };
 
 // ─── Top banner content ───────────────────────────────────────────────────────

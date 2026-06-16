@@ -18,9 +18,24 @@ export const ideaContestBannerContent = {
 };
 
 // ─── Page metadata (SEO) ──────────────────────────────────────────────────────
+const _title = `Idea Contest 2026 — ${ideaContestMeta.organizer}`;
+const _desc  = `Showcase your innovative ideas at the ${ideaContestMeta.venue}. Prize Pool ${ideaContestMeta.prize}. Event: ${ideaContestMeta.eventDate}.`;
+
 export const ideaContestPageMeta = {
-  title: `Idea Contest 2026 — ${ideaContestMeta.organizer}`,
-  description: `Showcase your innovative ideas at the ${ideaContestMeta.venue}. Prize Pool ${ideaContestMeta.prize}. Event: ${ideaContestMeta.eventDate}.`,
+  title: _title,
+  description: _desc,
+  openGraph: {
+    title: _title,
+    description: _desc,
+    type: "website",
+    images: [{ url: "/api/og?type=idea-contest", width: 1200, height: 630, alt: "Idea Contest 2026" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: _title,
+    description: _desc,
+    images: ["/api/og?type=idea-contest"],
+  },
 };
 
 // ─── Homepage section stat cards ──────────────────────────────────────────────
