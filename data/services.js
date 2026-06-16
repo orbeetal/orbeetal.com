@@ -1,3 +1,21 @@
+export const servicesPageMeta = {
+  title: "Digital Services — Orbeetal",
+  description:
+    "Full-spectrum digital services: web design, web development, mobile apps, UI/UX design, digital marketing, and cybersecurity. We engineer competitive advantages.",
+  openGraph: {
+    title: "Digital Services — Orbeetal",
+    description: "Full-spectrum digital services engineered for precision and long-term growth.",
+    type: "website",
+    images: [{ url: "/api/og/services", width: 1200, height: 630, alt: "Orbeetal Digital Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Services — Orbeetal",
+    description: "Full-spectrum digital services engineered for precision and long-term growth.",
+    images: ["/api/og/services"],
+  },
+};
+
 export const services = [
   {
     title: "Web Design",

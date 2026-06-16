@@ -1,3 +1,21 @@
+export const aboutPageMeta = {
+  title: "About Orbeetal — Forward-Thinking Software Company",
+  description:
+    "Orbeetal is a BASIS-certified software company based in Dhaka, Bangladesh. We deliver web & mobile development, AI systems, and cybersecurity — helping businesses grow in the digital age.",
+  openGraph: {
+    title: "About Orbeetal — Forward-Thinking Software Company",
+    description: "BASIS-certified software company based in Dhaka, Bangladesh.",
+    type: "website",
+    images: [{ url: "/api/og/about", width: 1200, height: 630, alt: "About Orbeetal" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Orbeetal — Forward-Thinking Software Company",
+    description: "BASIS-certified software company based in Dhaka, Bangladesh.",
+    images: ["/api/og/about"],
+  },
+};
+
 export const stats = [
   { label: "Happy Clients",      value: "10+" },
   { label: "Projects Done",      value: "20+" },

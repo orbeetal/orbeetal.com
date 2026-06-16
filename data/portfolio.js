@@ -1,3 +1,21 @@
+export const portfolioPageMeta = {
+  title: "Portfolio — Orbeetal",
+  description:
+    "A selection of projects we're proud of — news portals, corporate websites, e-commerce platforms, EdTech, NGO platforms, and memorial sites. Built with Next.js, Django, and Laravel.",
+  openGraph: {
+    title: "Portfolio — Orbeetal",
+    description: "A selection of projects that define our standards and ambition.",
+    type: "website",
+    images: [{ url: "/api/og/portfolio", width: 1200, height: 630, alt: "Orbeetal Portfolio" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio — Orbeetal",
+    description: "A selection of projects that define our standards and ambition.",
+    images: ["/api/og/portfolio"],
+  },
+};
+
 export const portfolioProjects = [
   {
     title: "Ruet Reporters Unity",

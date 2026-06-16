@@ -28,13 +28,13 @@ export const ideaContestPageMeta = {
     title: _title,
     description: _desc,
     type: "website",
-    images: [{ url: "/api/og?type=idea-contest", width: 1200, height: 630, alt: "Idea Contest 2026" }],
+    images: [{ url: "/api/og/idea-contest", width: 1200, height: 630, alt: "Idea Contest 2026" }],
   },
   twitter: {
     card: "summary_large_image",
     title: _title,
     description: _desc,
-    images: ["/api/og?type=idea-contest"],
+    images: ["/api/og/idea-contest"],
   },
 };
 

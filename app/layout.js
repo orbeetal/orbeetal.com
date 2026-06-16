@@ -19,6 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://orbeetal.com"),
   title: "Orbeetal — Elevate Above the Competition",
   description:
     "A forward-thinking software company dedicated to building smart, impactful technology — empowering businesses through innovation and intelligent solutions.",
@@ -27,7 +28,7 @@ export const metadata = {
     title: "Orbeetal — Elevate Above the Competition",
     description:
       "A forward-thinking software company dedicated to building smart, impactful technology.",
-    images: [{ url: "/images/opengraph.jpg" }],
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "Orbeetal — Elevate Above the Competition" }],
   },
 };
 

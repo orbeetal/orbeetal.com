@@ -1,3 +1,21 @@
+export const departmentsPageMeta = {
+  title: "Our Departments — Orbeetal",
+  description:
+    "Seven specialized departments — Finance, Operations, Planning, IT, Marketing, Product, and Cybersecurity — working in unison to deliver excellence.",
+  openGraph: {
+    title: "Our Departments — Orbeetal",
+    description: "Seven specialized departments working in unison to deliver excellence.",
+    type: "website",
+    images: [{ url: "/api/og/departments", width: 1200, height: 630, alt: "Orbeetal Departments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Departments — Orbeetal",
+    description: "Seven specialized departments working in unison to deliver excellence.",
+    images: ["/api/og/departments"],
+  },
+};
+
 export const departments = [
   {
     title: "Finance",

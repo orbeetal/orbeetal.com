@@ -1,3 +1,21 @@
+export const teamPageMeta = {
+  title: "Our Team — Orbeetal",
+  description:
+    "Meet the seven visionary directors driving Orbeetal's mission to engineer competitive advantages for businesses worldwide.",
+  openGraph: {
+    title: "Our Team — Orbeetal",
+    description: "Seven visionary directors driving Orbeetal's global mission.",
+    type: "website",
+    images: [{ url: "/api/og/team", width: 1200, height: 630, alt: "Orbeetal Team" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team — Orbeetal",
+    description: "Seven visionary directors driving Orbeetal's global mission.",
+    images: ["/api/og/team"],
+  },
+};
+
 export const teamMembers = [
   { name: "Md. Saiful Islam",       role: "Director", initials: "SI", gradient: "from-blue-500 to-cyan-400" },
   { name: "Hasibul Hasan Sifat",    role: "Director", initials: "HS", gradient: "from-indigo-500 to-blue-400" },

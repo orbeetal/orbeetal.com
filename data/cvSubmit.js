@@ -19,13 +19,13 @@ export const cvSubmitPageMeta = {
     title: _title,
     description: _desc,
     type: "website",
-    images: [{ url: "/api/og?type=cv-submit", width: 1200, height: 630, alt: `RCF ${cvSubmitMeta.edition} Career Fair` }],
+    images: [{ url: "/api/og/cv-submit", width: 1200, height: 630, alt: `RCF ${cvSubmitMeta.edition} Career Fair` }],
   },
   twitter: {
     card: "summary_large_image",
     title: _title,
     description: _desc,
-    images: ["/api/og?type=cv-submit"],
+    images: ["/api/og/cv-submit"],
   },
 };
 

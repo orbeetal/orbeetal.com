@@ -1,12 +1,12 @@
-export { services } from "./services.js";
-export { departments } from "./departments.js";
-export { teamMembers } from "./team.js";
-export { portfolioProjects } from "./portfolio.js";
+export { services, servicesPageMeta } from "./services.js";
+export { departments, departmentsPageMeta } from "./departments.js";
+export { teamMembers, teamPageMeta } from "./team.js";
+export { portfolioProjects, portfolioPageMeta } from "./portfolio.js";
 export { testimonials } from "./testimonials.js";
 export { clients } from "./clients.js";
 export { processSteps } from "./process.js";
-export { stats, whyChooseUs } from "./about.js";
-export { contactInfo } from "./contact.js";
+export { stats, whyChooseUs, aboutPageMeta } from "./about.js";
+export { contactInfo, contactPageMeta } from "./contact.js";
 export {
   ideaContestMeta,
   ideaContestBannerContent,

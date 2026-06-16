@@ -1,3 +1,21 @@
+export const contactPageMeta = {
+  title: "Contact Orbeetal — Let's Build Something Exceptional",
+  description:
+    "Reach out to Orbeetal via email, WhatsApp, Facebook, or LinkedIn. Based in Dhaka, Bangladesh — serving clients globally.",
+  openGraph: {
+    title: "Contact Orbeetal — Let's Build Something Exceptional",
+    description: "Reach out and let's start building something exceptional together.",
+    type: "website",
+    images: [{ url: "/api/og/contact", width: 1200, height: 630, alt: "Contact Orbeetal" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Orbeetal — Let's Build Something Exceptional",
+    description: "Reach out and let's start building something exceptional together.",
+    images: ["/api/og/contact"],
+  },
+};
+
 export const contactInfo = {
   email: "support@orbeetal.com",
   whatsapp: {
