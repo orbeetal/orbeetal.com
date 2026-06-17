@@ -12,6 +12,7 @@ import { Team } from "@/components/sections/Team";
 import { About } from "@/components/sections/About";
 import { Process } from "@/components/sections/Process";
 import { Contact } from "@/components/sections/Contact";
+import { BasisBadge } from "@/components/BasisBadge";
 import { activeHero } from "@/data/siteConfig.js";
 
 const heroComponents = {
@@ -25,6 +26,9 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground overflow-hidden selection:bg-primary/30 selection:text-white">
       <Navbar />
       {heroComponents[activeHero] ?? <Hero />}
+      <div className="py-8 flex justify-center border-b border-white/5 bg-white/1 border-t">
+        <BasisBadge />
+      </div>
       <ClientsBar />
       <Services />
       <Departments />

@@ -1,5 +1,6 @@
 import { Outfit, Space_Grotesk, Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
+import { BackToTop } from "@/components/BackToTop";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full overflow-x-hidden" suppressHydrationWarning>
         {children}
         <Toaster />
+        <BackToTop />
       </body>
     </html>
   );

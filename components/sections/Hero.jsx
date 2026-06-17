@@ -8,7 +8,7 @@ import { scrollToSection } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section className="relative min-h-dvh flex items-center pt-20 overflow-hidden">
+    <section className="relative flex items-center pt-28 pb-8 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-background/80 z-10"></div>
         <Image
@@ -52,7 +52,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button
               size="lg"
@@ -71,19 +71,6 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
-            className="inline-flex items-center gap-4 px-5 py-3 rounded-xl border border-amber-400/30 bg-amber-400/10 backdrop-blur-sm"
-          >
-            <div className="shrink-0 w-16 h-10 bg-white rounded-lg overflow-hidden p-1 flex items-center justify-center">
-              <Image src="/brand/basis_logo.jpeg" alt="BASIS" width={56} height={32} className="object-contain w-full h-full" />
-            </div>
-            <div className="text-left">
-              <span className="text-amber-300 font-semibold text-sm tracking-wide block">BASIS Member</span>
-              <span className="text-amber-400/60 text-xs leading-none mt-0.5 block">Bangladesh Association of Software &amp; Information Services</span>
-            </div>
-          </motion.div>
         </div>
       </div>
 

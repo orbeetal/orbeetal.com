@@ -2,20 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { BasisBadge } from "@/components/BasisBadge";
+import { navLinks } from "@/data/navigation.js";
 
-const navLinks = [
-  { name: "Services",    route: "/services" },
-  { name: "Departments", route: "/departments" },
-  { name: "Portfolio",   route: "/portfolio" },
-  { name: "Team",        route: "/team" },
-  { name: "About",       route: "/about" },
-  { name: "Contact",     route: "/contact" },
+const legalLinks = [
+  { name: "Privacy Policy",  route: "/privacy-policy" },
+  { name: "Terms of Service", route: "/terms" },
+  { name: "Cookie Policy",   route: "/cookies" },
 ];
 
-const specialLinks = [
-  { name: "Idea Contest", route: "/idea-contest" },
-  { name: "Career Fair",  route: "/cv-submit" },
-];
+// footer navigation links upto 5
+const footerNavLinks = navLinks.slice(0, 3).map((item) => ({
+  name: item.name,
+  route: item.route,
+}));
 
 export function Footer() {
   return (
@@ -38,7 +38,7 @@ export function Footer() {
           <div>
             <h4 className="font-display font-semibold text-white mb-6 text-lg">Navigation</h4>
             <ul className="space-y-4">
-              {navLinks.map((item) => (
+              {footerNavLinks.map((item) => (
                 <li key={item.name}>
                   <Link href={item.route} className="text-white/60 hover:text-primary transition-colors">
                     {item.name}
@@ -49,36 +49,22 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6 text-lg">Programs</h4>
-            <ul className="space-y-4 mb-8">
-              {specialLinks.map((item) => (
+            <h4 className="font-display font-semibold text-white mb-4 text-lg">Legal</h4>
+            <ul className="space-y-4">
+              {legalLinks.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.route} className="text-amber-400/80 hover:text-amber-300 transition-colors">
+                  <Link href={item.route} className="text-white/60 hover:text-primary transition-colors">
                     {item.name}
                   </Link>
                 </li>
               ))}
-            </ul>
-            <h4 className="font-display font-semibold text-white mb-4 text-lg">Legal</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-white/60 hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/60 hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/60 hover:text-primary transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
         </div>
 
         {/* BASIS Member Strip */}
         <div className="mt-12 mb-8 flex justify-center">
-          <div className="inline-flex items-center gap-4 px-5 py-3 rounded-xl border border-amber-400/25 bg-amber-400/8">
-            <div className="shrink-0 w-20 h-12 bg-white rounded-lg overflow-hidden p-1.5 flex items-center justify-center">
-              <Image src="/brand/basis_logo.jpeg" alt="BASIS" width={72} height={40} className="object-contain w-full h-full" />
-            </div>
-            <div>
-              <span className="text-amber-300 font-semibold text-sm block">Proud Member of BASIS</span>
-              <span className="text-amber-400/50 text-xs hidden sm:block mt-0.5">Bangladesh Association of Software &amp; Information Services</span>
-            </div>
-          </div>
+          <BasisBadge />
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">

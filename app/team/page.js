@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { TeamPageContent } from "@/components/sections/TeamPageContent";
-import { teamPageMeta } from "@/data/team.js";
+import { teamPageMeta } from "@/data/team/index.js";
 
 export const metadata = teamPageMeta;
 

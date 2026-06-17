@@ -1,6 +1,6 @@
 export { services, servicesPageMeta } from "./services.js";
 export { departments, departmentsPageMeta } from "./departments.js";
-export { teamMembers, teamPageMeta } from "./team.js";
+export { teamMembers, teamPageMeta } from "./team/index.js";
 export { portfolioProjects, portfolioPageMeta } from "./portfolio.js";
 export { testimonials } from "./testimonials.js";
 export { clients } from "./clients.js";

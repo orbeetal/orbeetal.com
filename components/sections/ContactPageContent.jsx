@@ -2,30 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone } from "lucide-react";
+import { FacebookIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { contactInfo } from "@/data/index.js";
-
-function FacebookIcon({ className }) {
-  return (
-    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-    </svg>
-  );
-}
-
-function LinkedinIcon({ className }) {
-  return (
-    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-      <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  );
-}
 
 export function ContactPageContent() {
   return (
     <section className="py-20 md:py-28 relative z-20 overflow-hidden">
       <div className="absolute inset-0 bg-primary/5" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-125 bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
@@ -85,7 +69,7 @@ export function ContactPageContent() {
           <motion.div
             initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
-            className="glass-panel rounded-2xl border border-white/10 overflow-hidden min-h-[480px]"
+            className="glass-panel rounded-2xl border border-white/10 overflow-hidden min-h-120"
           >
             <iframe
               src={contactInfo.mapEmbed}

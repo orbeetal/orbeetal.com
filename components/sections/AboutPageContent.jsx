@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BasisBadge } from "@/components/BasisBadge";
 import { stats, whyChooseUs } from "@/data/index.js";
 
 const mission = {
@@ -80,7 +81,7 @@ export function AboutPageContent() {
 
       {/* Mission & Vision */}
       <section className="py-20 border-t border-white/5 relative z-20">
-        <div className="absolute inset-0 bg-white/[0.015]" />
+        <div className="absolute inset-0 bg-white/1.5" />
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {[mission, vision].map((item, i) => (
@@ -102,15 +103,7 @@ export function AboutPageContent() {
             viewport={{ once: true }} transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            <div className="inline-flex items-center gap-6 px-8 py-5 rounded-2xl border border-amber-400/25 bg-amber-400/8">
-              <div className="shrink-0 w-24 h-14 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
-                <Image src="/brand/basis_logo.jpeg" alt="BASIS" width={80} height={48} className="object-contain w-full h-full" />
-              </div>
-              <div>
-                <span className="text-amber-300 font-semibold text-base block mb-1">Proud Member of BASIS</span>
-                <span className="text-amber-400/50 text-sm">Bangladesh Association of Software &amp; Information Services</span>
-              </div>
-            </div>
+            <BasisBadge />
           </motion.div>
         </div>
       </section>

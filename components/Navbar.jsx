@@ -7,22 +7,17 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { TopBanner } from "@/components/TopBanner";
+import { navLinks } from "@/data/navigation.js";
 import { activeHero } from "@/data/siteConfig.js";
 
-const navLinks = [
-  { name: "Services",     route: "/services" },
-  { name: "Departments",  route: "/departments" },
-  { name: "Portfolio",    route: "/portfolio" },
-  { name: "Team",         route: "/team" },
-  { name: "About",        route: "/about" },
-  { name: "Contact",      route: "/contact" },
-];
-
+const eventLinks = [];
 if (activeHero === "idea-contest") {
-  navLinks.push({ name: "Idea Contest", route: "/idea-contest", highlight: true });
+  eventLinks.push({ name: "Idea Contest", route: "/idea-contest", highlight: true });
 } else if (activeHero === "cv-submit") {
-  navLinks.push({ name: "Career Fair", route: "/cv-submit", highlight: true });
+  eventLinks.push({ name: "Career Fair", route: "/cv-submit", highlight: true });
 }
+
+const allLinks = [...navLinks, ...eventLinks];
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,12 +45,12 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           <div className="flex items-center gap-6">
-            {navLinks.map((link) => (
+            {allLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.route}
                 className={cn(
-                  "text-lg font-display font-thin transition-colors",
+                  "text-lg font-display font-light transition-colors",
                   link.highlight
                     ? "text-amber-400 hover:text-amber-300"
                     : "text-white/70 hover:text-white"
@@ -73,7 +68,11 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="lg:hidden text-white z-50" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button
+          className="lg:hidden text-white z-50"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+        >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
@@ -83,7 +82,7 @@ export function Navbar() {
             isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         >
-          {navLinks.map((link) => (
+          {allLinks.map((link) => (
             <Link
               key={link.name}
               href={link.route}
