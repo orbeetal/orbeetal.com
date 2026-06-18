@@ -2,7 +2,7 @@
 export const ideaContestMeta = {
   submitFormUrl: "https://form.jotform.com/orbeetalcom/idea-contest--2026",
   eventDate: "11 July, 2026",
-  deadline: "08 July, 2026",
+  deadline: "09 July, 2026",
   prize: "৳10,000",
   organizer: "Orbeetal",
   venue: "RUET Career Forum 11th Career Fair",
