@@ -23,6 +23,7 @@ import {
   cvSubmitSteps,
   cvSubmitBenefits,
 } from "@/data/index.js";
+import CvSubmitForm from "@/components/sections/CvSubmitForm";
 
 const ICON_MAP = {
   Briefcase, CalendarDays, MapPin, FileText,
@@ -90,25 +91,15 @@ export default function CvSubmitLanding() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            {cvSubmitMeta.submitFormUrl ? (
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-white border-none rounded-sm h-14 px-10 text-base shadow-[0_0_50px_-10px_rgba(0,112,243,0.6)]"
-              >
-                <a href={cvSubmitMeta.submitFormUrl} target="_blank" rel="noopener noreferrer">
-                  Submit Your CV <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            ) : (
-              <Button
-                disabled
-                size="lg"
-                className="bg-primary/50 text-white border-none rounded-sm h-14 px-10 text-base cursor-not-allowed"
-              >
-                Submission Opening Soon
-              </Button>
-            )}
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white border-none rounded-sm h-14 px-10 text-base shadow-[0_0_50px_-10px_rgba(0,112,243,0.6)]"
+            >
+              <a href="#cv-form">
+                Submit Your CV <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
             <Button
               asChild
               size="lg"
@@ -247,6 +238,9 @@ export default function CvSubmitLanding() {
         </div>
       </section>
 
+      {/* ── CV Submit Form ── */}
+      <CvSubmitForm />
+
       {/* ── CTA ── */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -291,25 +285,15 @@ export default function CvSubmitLanding() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            {cvSubmitMeta.submitFormUrl ? (
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-white border-none rounded-sm h-16 px-12 text-lg shadow-[0_0_60px_-10px_rgba(0,112,243,0.6)]"
-              >
-                <a href={cvSubmitMeta.submitFormUrl} target="_blank" rel="noopener noreferrer">
-                  Submit Your CV <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            ) : (
-              <Button
-                disabled
-                size="lg"
-                className="bg-primary/50 text-white border-none rounded-sm h-16 px-12 text-lg cursor-not-allowed"
-              >
-                Submission Opening Soon
-              </Button>
-            )}
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white border-none rounded-sm h-16 px-12 text-lg shadow-[0_0_60px_-10px_rgba(0,112,243,0.6)]"
+            >
+              <a href="#cv-form">
+                Submit Your CV <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
           </motion.div>
         </div>
       </section>
