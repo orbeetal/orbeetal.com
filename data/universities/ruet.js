@@ -1,0 +1,86 @@
+export const ruetDepartments = [
+  {
+    university: "ruet",
+    code: "00",
+    name: "Civil Engineering",
+    shortName: "CE",
+  },
+  {
+    university: "ruet",
+    code: "01",
+    name: "Electrical & Electronic Engineering",
+    shortName: "EEE",
+  },
+  {
+    university: "ruet",
+    code: "02",
+    name: "Mechanical Engineering",
+    shortName: "ME",
+  },
+  {
+    university: "ruet",
+    code: "03",
+    name: "Computer Science & Engineering",
+    shortName: "CSE",
+  },
+  {
+    university: "ruet",
+    code: "04",
+    name: "Electronic & Telecommunication Engineering",
+    shortName: "ETE",
+  },
+  {
+    university: "ruet",
+    code: "05",
+    name: "Industrial & Production Engineering",
+    shortName: "IPE",
+  },
+  {
+    university: "ruet",
+    code: "06",
+    name: "Ceramic & Metallurgical Engineering",
+    shortName: "CME",
+  },
+  {
+    university: "ruet",
+    code: "07",
+    name: "Urban & Regional Planning",
+    shortName: "URP",
+  },
+  {
+    university: "ruet",
+    code: "08",
+    name: "Mechatronics Engineering",
+    shortName: "MTE",
+  },
+  {
+    university: "ruet",
+    code: "09",
+    name: "Architecture",
+    shortName: "Arch",
+  },
+  {
+    university: "ruet",
+    code: "10",
+    name: "Electrical & Computer Engineering",
+    shortName: "ECE",
+  },
+  {
+    university: "ruet",
+    code: "11",
+    name: "Chemical Engineering",
+    shortName: "ChE",
+  },
+  {
+    university: "ruet",
+    code: "12",
+    name: "Building Engineering & Construction Management",
+    shortName: "BECM",
+  },
+  {
+    university: "ruet",
+    code: "13",
+    name: "Materials Science & Engineering",
+    shortName: "MSE",
+  },
+];
