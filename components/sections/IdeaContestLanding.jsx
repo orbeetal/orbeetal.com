@@ -92,7 +92,8 @@ export function IdeaContestLanding() {
               className="bg-amber-500 hover:bg-amber-400 text-black font-semibold border-none rounded-sm h-14 px-10 text-base shadow-[0_0_50px_-10px_rgba(245,158,11,0.7)]"
             >
               <a href={ideaContestMeta.submitFormUrl} target="_blank" rel="noopener noreferrer">
-                Register Now <ArrowRight className="ml-2 h-4 w-4" />
+                Submit IDEA
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button
@@ -216,7 +217,8 @@ export function IdeaContestLanding() {
               className="bg-amber-500 hover:bg-amber-400 text-black font-semibold border-none rounded-sm h-16 px-12 text-lg shadow-[0_0_60px_-10px_rgba(245,158,11,0.7)]"
             >
               <a href={ideaContestMeta.submitFormUrl} target="_blank" rel="noopener noreferrer">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                Submit IDEA
+                <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
           </motion.div>

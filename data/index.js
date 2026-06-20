@@ -25,5 +25,10 @@ export {
   cvSubmitSteps,
   cvSubmitBenefits,
 } from "./cvSubmit.js";
-export { activeHero, showTopBanner } from "./siteConfig.js";
+export {
+  features,
+  activeHero,
+  activeTopBanner,
+  customBannerContent,
+} from "./siteConfig.js";
 export { ruetDepartments } from "./universities/ruet.js";

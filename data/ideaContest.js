@@ -14,7 +14,7 @@ export const ideaContestBannerContent = {
   highlight: `Prize Pool ${ideaContestMeta.prize}`,
   detail: `Deadline ${ideaContestMeta.deadline}`,
   href: "/idea-contest",
-  cta: "Register Now",
+  cta: "View Details",
 };
 
 // ─── Page metadata (SEO) ──────────────────────────────────────────────────────

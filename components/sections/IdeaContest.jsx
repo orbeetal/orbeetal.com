@@ -95,7 +95,8 @@ export function IdeaContest() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Register Now
+                  Submit IDEA
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
             </motion.div>

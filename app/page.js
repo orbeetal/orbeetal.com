@@ -12,7 +12,7 @@ import { About } from "@/components/sections/About";
 import { Process } from "@/components/sections/Process";
 import { Contact } from "@/components/sections/Contact";
 import { BasisBadge } from "@/components/BasisBadge";
-import { activeHero } from "@/data/siteConfig.js";
+import { resolveActiveHero } from "@/lib/siteFeatures.js";
 
 const heroComponents = {
   hero: <Hero />,
@@ -21,9 +21,11 @@ const heroComponents = {
 };
 
 export default function Home() {
+  const heroKey = resolveActiveHero();
+
   return (
     <PageLayout>
-      {heroComponents[activeHero] ?? <Hero />}
+      {heroComponents[heroKey] ?? <Hero />}
       <div className="py-8 flex justify-center border-b border-white/5 bg-white/1 border-t">
         <BasisBadge />
       </div>

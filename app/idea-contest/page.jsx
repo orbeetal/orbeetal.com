@@ -1,12 +1,12 @@
 import { PageLayout } from "@/components/PageLayout";
 import { IdeaContestLanding } from "@/components/sections/IdeaContestLanding";
 import { ideaContestPageMeta } from "@/data/ideaContest.js";
-import { activeHero } from "@/data/siteConfig.js";
+import { isIdeaContestEnabled } from "@/lib/siteFeatures.js";
 
 export const metadata = ideaContestPageMeta;
 
 export default function IdeaContestPage() {
-  if (activeHero && activeHero === "idea-contest") {
+  if (isIdeaContestEnabled()) {
     return (
       <PageLayout>
         <IdeaContestLanding />

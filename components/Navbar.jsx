@@ -8,15 +8,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { TopBanner } from "@/components/TopBanner";
 import { navLinks } from "@/data/navigation.js";
-import { activeHero } from "@/data/siteConfig.js";
+import { getEnabledEventNavLinks } from "@/lib/siteFeatures.js";
 
-const eventLinks = [];
-if (activeHero === "idea-contest") {
-  eventLinks.push({ name: "Idea Contest", route: "/idea-contest", highlight: true });
-} else if (activeHero === "cv-submit") {
-  eventLinks.push({ name: "Career Fair", route: "/cv-submit", highlight: true });
-}
-
+const eventLinks = getEnabledEventNavLinks().map((link) => ({ ...link, highlight: true }));
 const allLinks = [...navLinks, ...eventLinks];
 
 export function Navbar() {

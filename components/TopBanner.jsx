@@ -1,28 +1,21 @@
 "use client";
 
+import { createElement } from "react";
 import Link from "next/link";
-import { Trophy, ArrowRight, Briefcase } from "lucide-react";
-import { activeHero, showTopBanner } from "@/data/siteConfig.js";
-import { ideaContestBannerContent } from "@/data/ideaContest.js";
-import { cvSubmitBannerContent } from "@/data/cvSubmit.js";
-
-const BANNER_MAP = {
-  "idea-contest": { content: ideaContestBannerContent, Icon: Trophy },
-  "cv-submit":    { content: cvSubmitBannerContent,    Icon: Briefcase },
-};
+import { ArrowRight } from "lucide-react";
+import { resolveTopBanner } from "@/lib/siteFeatures.js";
+import { resolveIcon } from "@/lib/icons";
 
 export function TopBanner() {
-  if (!showTopBanner) return null;
-
-  const banner = BANNER_MAP[activeHero];
+  const banner = resolveTopBanner();
   if (!banner) return null;
 
-  const { content, Icon } = banner;
+  const { content, iconName } = banner;
 
   return (
     <div className="bg-amber-500 text-black w-full py-2.5 px-4 flex items-center justify-center">
       <div className="flex items-center gap-x-2 sm:gap-x-4 flex-wrap justify-center gap-y-1 text-center">
-        <Icon className="w-4 h-4 shrink-0" />
+        {createElement(resolveIcon(iconName) ?? ArrowRight, { className: "w-4 h-4 shrink-0" })}
 
         <span className="font-semibold text-sm tracking-wide">{content.label}</span>
 

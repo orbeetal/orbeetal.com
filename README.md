@@ -36,8 +36,20 @@ ORBEETAL_SITE_SECRET=your-shared-secret
 
 Edit [`data/siteConfig.js`](data/siteConfig.js):
 
-- `activeHero` — Homepage hero section: `"hero"` | `"idea-contest"` | `"cv-submit"`
-- `showTopBanner` — Show/hide the top announcement banner
+```js
+export const features = {
+  ideaContest: true,  // nav link + /idea-contest page
+  cvSubmit: false,    // nav link + /cv-submit page
+};
+
+export const activeHero = "idea-contest";      // "hero" | "idea-contest" | "cv-submit"
+export const activeTopBanner = "idea-contest"; // false | "idea-contest" | "cv-submit" | "custom"
+```
+
+- `features` — Enable/disable event pages and nav links independently
+- `activeHero` — Homepage hero: DefaultHero (`"hero"`) | IdeaContestHero | CvSubmitHero. Falls back to DefaultHero if the feature is disabled.
+- `activeTopBanner` — Top announcement banner type, or `false` to hide
+- `customBannerContent` — Banner text/link when `activeTopBanner` is `"custom"`
 
 ## Project Structure
 

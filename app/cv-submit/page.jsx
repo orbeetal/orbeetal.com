@@ -1,12 +1,12 @@
 import { PageLayout } from "@/components/PageLayout";
 import { CvSubmitLanding } from "@/components/sections/CvSubmitLanding";
 import { cvSubmitPageMeta } from "@/data/cvSubmit.js";
-import { activeHero } from "@/data/siteConfig.js";
+import { isCvSubmitEnabled } from "@/lib/siteFeatures.js";
 
 export const metadata = cvSubmitPageMeta;
 
 export default function CvSubmitPage() {
-  if (activeHero && activeHero === "cv-submit") {
+  if (isCvSubmitEnabled()) {
     return (
       <PageLayout>
         <CvSubmitLanding />
