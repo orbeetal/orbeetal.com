@@ -1,6 +1,6 @@
 "use client";
 
-import { m } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function MotionFadeIn({
@@ -12,10 +12,17 @@ export function MotionFadeIn({
   y = 20,
   as = "div",
 }) {
-  const Component = m[as] ?? m.div;
+  const prefersReducedMotion = useReducedMotion();
+  const Component = as;
+
+  if (prefersReducedMotion) {
+    return <Component className={cn(className)}>{children}</Component>;
+  }
+
+  const MotionComponent = m[as] ?? m.div;
 
   return (
-    <Component
+    <MotionComponent
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true }}
@@ -23,6 +30,6 @@ export function MotionFadeIn({
       className={cn(className)}
     >
       {children}
-    </Component>
+    </MotionComponent>
   );
 }

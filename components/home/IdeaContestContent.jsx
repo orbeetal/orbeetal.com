@@ -47,7 +47,7 @@ export function IdeaContestContent({ meta, stats }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-primary text-sm font-medium uppercase tracking-widest mb-6"
+              className="text-amber-300 text-sm font-medium uppercase tracking-widest mb-6"
             >
               Ideas Today, Impact Tomorrow
             </m.p>
