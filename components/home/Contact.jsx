@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone } from "lucide-react";
-import { SectionHeader } from "@/components/SectionHeader";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { FacebookIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { contactInfo } from "@/data/index.js";
 

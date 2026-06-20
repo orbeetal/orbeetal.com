@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import { SectionHeader } from "@/components/SectionHeader";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { stats, whyChooseUs } from "@/data/index.js";
 
 export function About() {

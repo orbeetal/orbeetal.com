@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SectionHeader } from "@/components/SectionHeader";
-import { DepartmentsGrid } from "./DepartmentsGrid";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { DepartmentsGrid } from "@/components/shared/DepartmentsGrid";
 
 const howWeWork = [
   {

@@ -1,8 +1,8 @@
 "use client";
 
-import { Section } from "@/components/Section";
-import { SectionHeader } from "@/components/SectionHeader";
-import { DepartmentsGrid } from "./DepartmentsGrid";
+import { Section } from "@/components/common/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { DepartmentsGrid } from "@/components/shared/DepartmentsGrid";
 
 export function Departments() {
   return (

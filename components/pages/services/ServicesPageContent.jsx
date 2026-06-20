@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CallToAction } from "./CallToAction";
-import { ServicesGrid } from "./ServicesGrid";
+import { CallToAction } from "@/components/common/CallToAction";
+import { ServicesGrid } from "@/components/shared/ServicesGrid";
 import { processSteps } from "@/data/index.js";
 
 const highlights = [

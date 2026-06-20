@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Trophy, Users, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { EventInfoCardGrid } from "@/components/sections/event/EventInfoCardGrid";
-import { EventStepsList } from "@/components/sections/event/EventStepsList";
-import { EventCriteriaList } from "@/components/sections/event/EventCriteriaList";
+import { EventInfoCardGrid } from "@/components/event/EventInfoCardGrid";
+import { EventStepsList } from "@/components/event/EventStepsList";
+import { EventCriteriaList } from "@/components/event/EventCriteriaList";
 import {
   ideaContestMeta,
   ideaContestInfoCards,

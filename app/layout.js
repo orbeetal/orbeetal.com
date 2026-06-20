@@ -1,6 +1,6 @@
 import { Outfit, Space_Grotesk, Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
-import { BackToTop } from "@/components/BackToTop";
+import { BackToTop } from "@/components/layout/BackToTop";
 import "./globals.css";
 
 const outfit = Outfit({

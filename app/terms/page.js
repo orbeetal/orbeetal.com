@@ -1,5 +1,5 @@
-import { PageLayout } from "@/components/PageLayout";
-import { PageHero } from "@/components/PageHero";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata = {
   title: "Terms of Service — Orbeetal",

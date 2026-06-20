@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
-import { SectionHeader } from "@/components/SectionHeader";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { testimonials } from "@/data/index.js";
 
 export function Testimonials() {

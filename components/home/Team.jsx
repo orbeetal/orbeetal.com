@@ -1,7 +1,7 @@
 "use client";
 
-import { SectionHeader } from "@/components/SectionHeader";
-import { TeamGrid } from "@/components/sections/TeamGrid";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { TeamGrid } from "@/components/shared/TeamGrid";
 
 export function Team() {
   return (

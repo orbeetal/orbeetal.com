@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ClientsBar } from "@/components/sections/ClientsBar";
+import { ClientsBar } from "@/components/shared/ClientsBar";
 import { portfolioProjects } from "@/data/index.js";
 
 export function PortfolioPageContent() {

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BasisBadge } from "@/components/BasisBadge";
+import { BasisBadge } from "@/components/common/BasisBadge";
 import { stats, whyChooseUs } from "@/data/index.js";
 
 const mission = {

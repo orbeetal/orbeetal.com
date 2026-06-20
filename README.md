@@ -55,11 +55,17 @@ export const activeTopBanner = "idea-contest"; // false | "idea-contest" | "cv-s
 
 ```
 app/              Routes, metadata, API routes (OG images, CV submit proxy)
-components/       UI primitives, layout, page sections
+components/
+  layout/         PageLayout, Navbar, Footer, TopBanner, PageHero, BackToTop
+  common/         Section, SectionHeader, CallToAction, BasisBadge, SocialLinks
+  home/           Homepage sections (Hero, Services, Team, …)
+  pages/          Page-specific content (mirrors app routes)
+  shared/         Reused grids and widgets (ServicesGrid, TeamGrid, ClientsBar)
+  event/          Shared event landing components
   ui/             Button, Card, Toast, form inputs
-  sections/       Homepage and page content sections
+  icons/          SVG icon components
 data/             Static content (services, team, events, navigation)
-lib/              Utilities (cn, icons, scroll helpers)
+lib/              Utilities (cn, icons, siteFeatures, scroll helpers)
 hooks/            Custom React hooks
 ```
 

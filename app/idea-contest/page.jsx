@@ -1,5 +1,5 @@
-import { PageLayout } from "@/components/PageLayout";
-import { IdeaContestLanding } from "@/components/sections/IdeaContestLanding";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { IdeaContestLanding } from "@/components/pages/idea-contest/IdeaContestLanding";
 import { ideaContestPageMeta } from "@/data/ideaContest.js";
 import { isIdeaContestEnabled } from "@/lib/siteFeatures.js";
 

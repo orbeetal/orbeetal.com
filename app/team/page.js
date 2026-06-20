@@ -1,6 +1,6 @@
-import { PageLayout } from "@/components/PageLayout";
-import { PageHero } from "@/components/PageHero";
-import { TeamPageContent } from "@/components/sections/TeamPageContent";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { PageHero } from "@/components/layout/PageHero";
+import { TeamPageContent } from "@/components/pages/team/TeamPageContent";
 import { teamPageMeta } from "@/data/team/index.js";
 
 export const metadata = teamPageMeta;

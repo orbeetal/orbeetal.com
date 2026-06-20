@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { SectionLabel } from "@/components/SectionLabel";
-import { SocialLinks } from "@/components/SocialLinks";
+import { SectionLabel } from "@/components/common/SectionLabel";
+import { SocialLinks } from "@/components/common/SocialLinks";
 
 export function TeamMemberProfile({ member }) {
   const nameParts = member.name.split(" ");

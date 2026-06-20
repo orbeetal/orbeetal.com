@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { BasisBadge } from "@/components/BasisBadge";
+import { BasisBadge } from "@/components/common/BasisBadge";
 import { navLinks } from "@/data/navigation.js";
 
 const legalLinks = [

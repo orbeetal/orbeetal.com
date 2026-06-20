@@ -4,9 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SectionHeader } from "@/components/SectionHeader";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { stats } from "@/data/index.js";
-import { TeamGrid } from "@/components/sections/TeamGrid";
+import { TeamGrid } from "@/components/shared/TeamGrid";
 
 export function TeamPageContent() {
   return (

@@ -1,8 +1,8 @@
 "use client";
 
-import { Section } from "@/components/Section";
-import { SectionHeader } from "@/components/SectionHeader";
-import { ServicesGrid } from "./ServicesGrid";
+import { Section } from "@/components/common/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { ServicesGrid } from "@/components/shared/ServicesGrid";
 
 export function Services() {
   return (

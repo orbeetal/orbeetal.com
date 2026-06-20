@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CvSubmitForm } from "@/components/sections/CvSubmitForm";
-import { EventInfoCardGrid } from "@/components/sections/event/EventInfoCardGrid";
-import { EventStepsList } from "@/components/sections/event/EventStepsList";
-import { EventCriteriaList } from "@/components/sections/event/EventCriteriaList";
+import { CvSubmitForm } from "@/components/pages/cv-submit/CvSubmitForm";
+import { EventInfoCardGrid } from "@/components/event/EventInfoCardGrid";
+import { EventStepsList } from "@/components/event/EventStepsList";
+import { EventCriteriaList } from "@/components/event/EventCriteriaList";
 import {
   cvSubmitMeta,
   cvSubmitInfoCards,

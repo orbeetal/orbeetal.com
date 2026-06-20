@@ -1,5 +1,5 @@
-import { PageLayout } from "@/components/PageLayout";
-import { CvSubmitLanding } from "@/components/sections/CvSubmitLanding";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { CvSubmitLanding } from "@/components/pages/cv-submit/CvSubmitLanding";
 import { cvSubmitPageMeta } from "@/data/cvSubmit.js";
 import { isCvSubmitEnabled } from "@/lib/siteFeatures.js";
 

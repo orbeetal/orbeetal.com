@@ -1,6 +1,6 @@
-import { PageLayout } from "@/components/PageLayout";
-import { PageHero } from "@/components/PageHero";
-import { ContactPageContent } from "@/components/sections/ContactPageContent";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { PageHero } from "@/components/layout/PageHero";
+import { ContactPageContent } from "@/components/pages/contact/ContactPageContent";
 import { contactPageMeta } from "@/data/contact.js";
 
 export const metadata = contactPageMeta;

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { TopBanner } from "@/components/TopBanner";
+import { TopBanner } from "@/components/layout/TopBanner";
 import { navLinks } from "@/data/navigation.js";
 import { getEnabledEventNavLinks } from "@/lib/siteFeatures.js";
 

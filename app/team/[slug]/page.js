@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { PageLayout } from "@/components/PageLayout";
-import { TeamMemberProfile } from "@/components/sections/TeamMemberProfile";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { TeamMemberProfile } from "@/components/pages/team/TeamMemberProfile";
 import { teamMembers } from "@/data/team/index.js";
 
 export function generateStaticParams() {

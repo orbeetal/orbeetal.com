@@ -1,17 +1,17 @@
-import { PageLayout } from "@/components/PageLayout";
-import { Hero } from "@/components/sections/Hero";
-import { IdeaContest } from "@/components/sections/IdeaContest";
-import { CvSubmit } from "@/components/sections/CvSubmit";
-import { ClientsBar } from "@/components/sections/ClientsBar";
-import { Services } from "@/components/sections/Services";
-import { Departments } from "@/components/sections/Departments";
-import { Portfolio } from "@/components/sections/Portfolio";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { Team } from "@/components/sections/Team";
-import { About } from "@/components/sections/About";
-import { Process } from "@/components/sections/Process";
-import { Contact } from "@/components/sections/Contact";
-import { BasisBadge } from "@/components/BasisBadge";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { Hero } from "@/components/home/Hero";
+import { IdeaContest } from "@/components/home/IdeaContest";
+import { CvSubmit } from "@/components/home/CvSubmit";
+import { ClientsBar } from "@/components/shared/ClientsBar";
+import { Services } from "@/components/home/Services";
+import { Departments } from "@/components/home/Departments";
+import { Portfolio } from "@/components/home/Portfolio";
+import { Testimonials } from "@/components/home/Testimonials";
+import { Team } from "@/components/home/Team";
+import { About } from "@/components/home/About";
+import { Process } from "@/components/home/Process";
+import { Contact } from "@/components/home/Contact";
+import { BasisBadge } from "@/components/common/BasisBadge";
 import { resolveActiveHero } from "@/lib/siteFeatures.js";
 
 const heroComponents = {

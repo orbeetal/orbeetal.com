@@ -1,6 +1,6 @@
-import { PageLayout } from "@/components/PageLayout";
-import { PageHero } from "@/components/PageHero";
-import { PortfolioPageContent } from "@/components/sections/PortfolioPageContent";
+import { PageLayout } from "@/components/layout/PageLayout";
+import { PageHero } from "@/components/layout/PageHero";
+import { PortfolioPageContent } from "@/components/pages/portfolio/PortfolioPageContent";
 import { portfolioPageMeta } from "@/data/portfolio.js";
 
 export const metadata = portfolioPageMeta;
